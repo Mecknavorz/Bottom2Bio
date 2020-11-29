@@ -3,9 +3,9 @@ Discord bot that turns bottom key-smashing into amino acid sequences
 
 ## Bot Commands
 All bot commands start with $, here are the currently implemented commands:
-- $help: displays a list of the current commands
-- $toggle: switches between 3-letter and 1-letter abbreviations when outputting the amino acid sequence
-- $auto: toggles between automatic bottom detection and manual mode, for the difference see below
+- `$help`: displays a list of the current commands
+- `$toggle`: switches between 3-letter and 1-letter abbreviations when outputting the amino acid sequence
+- `$auto`: toggles between automatic bottom detection and manual mode, for the difference see below
 
 ## How does it work?
 While on automode, Bottom2Bio works by first checking the number of spelling errors in a message, however, to avoid just accidentally detecting random typos it runs through the spell-checking function twice, leaving words that the dictionary really just doesn't recognize at all, e.g. ideally gibberish. From there it then checks to see if that gibberish is over 25% of the string, we add a 🧬 emoji as a reaction to the message because we're pretty sure that the message has or mostly is bottom spam. If one or more other uses react with 🧬 emojis to the message as well, then it is sent into our **advanced algorithm** and turn it into a string of amino acids!
