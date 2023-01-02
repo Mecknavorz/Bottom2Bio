@@ -1,5 +1,5 @@
 #bottom 2 bio bot
-#made by Tzarta (@Mecknavorz)
+#made by T&R (@Mecknavorz)
 
 import discord #this is the library that allows us to (easily) do stuff with discord
 from spellchecker import SpellChecker #spellchecker used to try and figureout keysmashing from normal text
